@@ -1,7 +1,7 @@
 name: poetry-abatilo
 on:
   push:
-    branches: ["master"]
+    branches: ["abatilo"]
 jobs:
   ci:
     strategy:
@@ -21,6 +21,6 @@ jobs:
         uses: abatilo/actions-poetry@v2
         with:
           poetry-version: ${{ matrix.poetry-version }}
-          
+
       - name: View poetry --help
         run: poetry --help
