@@ -1,7 +1,7 @@
 name: poetry-packetcoders-wf
 on:
   push:
-    branches: ["master"]
+    branches: ["packetcoders"]
 jobs:
    test:
     runs-on: ubuntu-latest
